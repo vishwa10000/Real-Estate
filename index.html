@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/2b45944627.js" crossorigin="anonymous"></script>
+    <title>Real Estate</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+</head>
+<body>
+    <header class="head">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <ul class="nav">
+            <li><a href="index.html" class="nav1">HOME</a></li>
+            <li><a href="pages.html" class="nav1">PAGES</a></li>
+            <li><a href="property.html" class="nav1">PROPERTY</a></li>
+            <li><a href="blog.html" class="nav1">BLOG</a></li>
+        </ul>
+        <div class="log">
+            <a href="#contat" ><i class="fa-regular fa-user">     CONTACT US</i></a>
+            <!-- <a href="#"><p>+   ADD PROPERTY</p></a> -->
+        </div>
+        <div class="manubar">
+            <a onclick="handleClick1()">
+                <i class="fa-regular fa-user"></i>
+            </a>
+            <a  onclick="handleClick()">
+                <i class="fa-solid fa-list bamenu"></i>
+            </a>
+        </div>
+    </header>
+    <div id="contat" class="contactus1">
+        <div class="contactus">
+            <div class="close">
+                <a href="#"><h1>X</h1></a>
+            </div>
+            <input type="text" placeholder="First Name" class="contat1">
+            <input type="text" placeholder="Last Name" class="contat1">
+            <input type="email" placeholder="Email" class="contat1">
+            <textarea class="contat2">Message</textarea>
+            <button type="button" class="contat3">Send</button>
+        </div>
+    </div>
+    <div id="topnav1" class="manubar2">
+        <ul>
+            <li><a href="#contat"><i class="fa-regular fa-user">     CONTACT US</i></a> </li>
+            <!-- <li><a href="#"><p>+   ADD PROPERTY</p></a> </li> -->
+        </ul>
+    </div>
+    <div id="topnav" class="manubar1">
+        <ul>
+            <li><a href="index.html" class="nav1">HOME</a></li>
+            <li><a href="pages.html" class="nav1">PAGES</a></li>
+            <li><a href="property.html" class="nav1">PROPERTY</a></li>
+            <li><a href="blog.html" class="nav1">BLOG</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="home2 home1">
+            <img src="img/home.jpg" alt="home">
+            <div class="home">
+                <div class="slt2">
+                    <h2>Buy or rent properties</h2>
+                    <h2>with no commission</h2>
+                </div>
+                <div class="slt3">
+                    <div class="home-box">
+                        <h4>Buy</h4>
+                    </div>
+                    <div class="home-box">
+                        <h4>For Rent</h4>
+                    </div>
+                    <div class="home-box">
+                        <h4>Sell</h4>
+                    </div>
+                </div>
+                <div class="cat">
+                    <div>
+                        <select class="slt">
+                            <option>Category</option>
+                            <option>Apartments</option>
+                            <option>Condos</option>
+                            <option>Houses</option>
+                            <option>Villas</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select class="slt">
+                            <option>Location</option>
+                            <option>Madurai</option>
+                            <option>pudur</option>
+                            <option>KK Nagar</option>
+                            <option>Teppakulam</option>
+                        </select>
+                    </div>
+                    <button type="button" class="slt1" onclick="charles()"><i class="fa-solid fa-sliders"></i>Advanced</button>
+                    <button type="button" class="slt1" onclick="charles()"><i class="fa-solid fa-magnifying-glass"></i>Search property</button>
+                </div>
+            </div>
+        </div>
+        <div class="home2">
+            <img src="img/home-rev-img-1.jpg" alt="home">
+            <div class="home">
+                <div class="slt2">
+                    <h2>Buy or rent properties</h2>
+                    <h2>with no commission</h2>
+                </div>
+                <div class="slt3">
+                    <div class="home-box">
+                        <h4>Buy</h4>
+                    </div>
+                    <div class="home-box">
+                        <h4>For Rent</h4>
+                    </div>
+                    <div class="home-box">
+                        <h4>Sell</h4>
+                    </div>
+                </div>
+                <div class="cat">
+                    <div>
+                        <select class="slt">
+                            <option>Category</option>
+                            <option>Apartments</option>
+                            <option>Condos</option>
+                            <option>Houses</option>
+                            <option>Villas</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select class="slt">
+                            <option>Madurai</option>
+                            <option>Vellakulam</option>
+                            <option>Kallikudi</option>
+                        </select>
+                    </div>
+                    <button type="button" class="slt1"><i class="fa-solid fa-sliders"></i>Advanced</button>
+                    <button type="button" class="slt1"><i class="fa-solid fa-magnifying-glass"></i>Search property</button>
+                </div>
+            </div>
+        </div>
+        <div class="home2">
+            <img src="img/home-rev-img-2.jpg" alt="home">
+            <div class="home">
+                <div class="slt2">
+                    <h2>Buy or rent properties</h2>
+                    <h2>with no commission</h2>
+                </div>
+                <div class="slt3">
+                    <div class="home-box">
+                        <h4>Buy</h4>
+                    </div>
+                    <div class="home-box">
+                        <h4>For Rent</h4>
+                    </div>
+                    <div class="home-box">
+                        <h4>Sell</h4>
+                    </div>
+                </div>
+                <div class="cat">
+                    <div>
+                        <select class="slt">
+                            <option>Category</option>
+                            <option>Apartments</option>
+                            <option>Condos</option>
+                            <option>Houses</option>
+                            <option>Villas</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select class="slt">
+                            <option>Madurai</option>
+                            <option>Vellakulam</option>
+                            <option>Kallikudi</option>
+                        </select>
+                    </div>
+                    <button type="button" class="slt1"><i class="fa-solid fa-sliders"></i>Advanced</button>
+                    <button type="button" class="slt1"><i class="fa-solid fa-magnifying-glass"></i>Search property</button>
+                </div>
+            </div>
+        </div>
+        <div class="home2">
+            <img src="img/home-rev-img-4.jpg" alt="home">
+            <div class="home">
+                <div class="slt2">
+                    <h2>Buy or rent properties</h2>
+                    <h2>with no commission</h2>
+                </div>
+                <div class="slt3">
+                    <div class="home-box">
+                        <h4>Buy</h4>
+                    </div>
+                    <div class="home-box">
+                        <h4>For Rent</h4>
+                    </div>
+                    <div class="home-box">
+                        <h4>Sell</h4>
+                    </div>
+                </div>
+                <div class="cat">
+                    <div>
+                        <select class="slt">
+                            <option>Category</option>
+                            <option>Apartments</option>
+                            <option>Condos</option>
+                            <option>Houses</option>
+                            <option>Villas</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select class="slt">
+                            <option>Madurai</option>
+                            <option>Vellakulam</option>
+                            <option>Kallikudi</option>
+                        </select>
+                    </div>
+                    <button type="button" class="slt1"><i class="fa-solid fa-sliders"></i>Advanced</button>
+                    <button type="button" class="slt1"><i class="fa-solid fa-magnifying-glass"></i>Search property</button>
+                </div>
+            </div>
+        </div>
+        <div class="main-bt">
+            <button type="button" id="btn-prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button type="button" id="btn-next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="dots">
+
+        </div>
+    </div>
+    <div class="main1">
+        <div class="choice">
+            <h1>Our choice of</h1>
+            <h1>popular real estate</h1>
+        </div>
+        <div class="properties">
+            <div class="pro1">
+                <div class="pro-img">
+                    <img src="img/south-sun-house02-460x300.jpg " alt="" class="pro-img3">
+                    <h4><i class="fa-solid fa-location-dot"></i>VILLAS - Brooklyn</h4>
+                    <h2>South Sun House</h2>
+                    <p>Lorem ipsum dolor sit amet, wisi nemore</p>
+                    <p>fastidii at vis, eos equidem admodum<p>
+                    <div class="pro-img2">
+                        <h5>sell</h5>
+                    </div>
+                    <div class="pro-img1">
+                        <h2>265,000 $</h2>
+                        <p><img src="img/icons8-building-30.png" alt="building">290m</p>
+                        <p><img src="img/bedroom-hotel.svg" alt="bedroom-hotel"> 4</p>
+                        <p><img src="img/bathtub-2.svg" alt="bathtub-2"> 3</p>
+                    </div>    
+                </div>
+                <div class="pro-img">
+                    <img src="img/list-half-map-image-1-460x300.jpg" alt="" class="pro-img3">
+                    <h4><i class="fa-solid fa-location-dot"></i>CONDOS  -  Manhattan</h4>
+                    <h2>Park House</h2>
+                    <p>Lorem ipsum dolor sit amet, wisi nemore</p>
+                    <p>fastidii at vis, eos equidem admodum<p>
+                        <div class="pro-img2">
+                            <h5>For Rent</h5>
+                        </div>
+                    <div class="pro-img1">
+                        <h2>2,200 $</h2>
+                        <p><img src="img/icons8-building-30.png" alt="building">150m</p>
+                        <p><img src="img/bedroom-hotel.svg" alt="bedroom-hotel"> 2</p>
+                        <p><img src="img/bathtub-2.svg" alt="bathtub-2"> 2</p>
+                    </div>    
+                </div>
+                <div class="pro-img">
+                    <img src="img/list-half-map-image-3-460x300.jpg" alt="" class="pro-img3">
+                    <h4><i class="fa-solid fa-location-dot"></i>VILLAS - Brooklyn</h4>
+                    <h2>Mountain Cabin</h2>
+                    <p>Lorem ipsum dolor sit amet, wisi nemore</p>
+                    <p>fastidii at vis, eos equidem admodum<p>
+                        <div class="pro-img2">
+                            <h5>For Rent</h5>
+                        </div>
+                    <div class="pro-img1">
+                        <h2>89,000 $</h2>
+                        <p><img src="img/icons8-building-30.png" alt="building">125m</p>
+                        <p><img src="img/bedroom-hotel.svg" alt="bedroom-hotel"> 2</p>
+                        <p><img src="img/bathtub-2.svg" alt="bathtub-2"> 2</p>
+                    </div>    
+                </div>
+            </div>
+            <div class="pro1">
+                <div class="pro-img">
+                    <img src="img/list-sidebar-img-1-460x300.jpg" alt="" class="pro-img3">
+                    <h4><i class="fa-solid fa-location-dot"></i>CONDOS  -  Staten Island</h4>
+                    <h2>Pine Forest Bungalow</h2>
+                    <p>Lorem ipsum dolor sit amet, wisi nemore</p>
+                    <p>fastidii at vis, eos equidem admodum<p>
+                        <div class="pro-img2">
+                            <h5>For Rent</h5>
+                        </div>
+                    <div class="pro-img1">
+                        <h2>1,200 $</h2>
+                        <p><img src="img/icons8-building-30.png" alt="building">160m</p>
+                        <p><img src="img/bedroom-hotel.svg" alt="bedroom-hotel"> 4</p>
+                        <p><img src="img/bathtub-2.svg" alt="bathtub-2"> 2</p>
+                    </div>    
+                </div>
+                <div class="pro-img">
+                    <img src="img/list-sidebar-img-2-460x300.jpg" alt="" class="pro-img3">
+                    <h4><i class="fa-solid fa-location-dot"></i>APARTMENTS  -  Queens</h4>
+                    <h2>White Stylish Loft</h2>
+                    <p>Lorem ipsum dolor sit amet, wisi nemore</p>
+                    <p>fastidii at vis, eos equidem admodum<p>
+                        <div class="pro-img2">
+                            <h5>For Rent</h5>
+                        </div>
+                    <div class="pro-img1">
+                        <h2>550,000 $</h2>
+                        <p><img src="img/icons8-building-30.png" alt="building">250m</p>
+                        <p><img src="img/bedroom-hotel.svg" alt="bedroom-hotel"> 4</p>
+                        <p><img src="img/bathtub-2.svg" alt="bathtub-2"> 3</p>
+                    </div>    
+                </div>
+                <div class="pro-img">
+                    <img src="img/property-gallery-img-1-new-460x300.jpg" alt="" class="pro-img3">
+                    <h4><i class="fa-solid fa-location-dot"></i>VILLAS - Brooklyn</h4>
+                    <h2>Mountain Cabin</h2>
+                    <p>Lorem ipsum dolor sit amet, wisi nemore</p>
+                    <p>fastidii at vis, eos equidem admodum<p>
+                        <div class="pro-img2">
+                            <h5>For Rent</h5>
+                        </div>
+                    <div class="pro-img1">
+                        <h2>1,200 $</h2>
+                        <p><img src="img/icons8-building-30.png" alt="building">160m</p>
+                        <p><img src="img/bedroom-hotel.svg" alt="bedroom-hotel"> 4</p>
+                        <p><img src="img/bathtub-2.svg" alt="bathtub-2"> 2</p>
+                    </div>    
+                </div>
+            </div>
+            <div class="pro-bu">
+                <a href="property.html"><button type="button" class="pro-bu1">Browse More properties</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="main2">
+        <div class="main2-img">
+            <img src="img/main-home-img-1.jpg" alt="">
+        </div>
+        <div class="main2-dt">
+            <h1>Modern spaces and</h1>
+            <h1>premium design</h1>
+            <p>Lorem ipsum dolor sit amet, minimum inimicus quo no, at vix primis viderere vituperatoribus. In corpora argumentum.</p>
+            <h5>– Mea omnium explicari</h5>
+            <h5>– His no legere feugaitoer</h5>
+            <h5>– illum idquem</h5>
+            <a href="#"><button type="button" class="main2-dt1" onclick="charles()">Search property</button></a>
+        </div>
+    </div>
+    <div class="main3">
+        <div class="work">
+            <h1>How It works?</h1>
+            <h1>Find a perfect home</h1>
+        </div>
+        <div class="work1">
+            <div class="work1-1">
+                <img src="img/real-estate-symbol-of-bigger-house-proposal.svg" alt="">
+                <h2>Find real estate</h2>
+                <p>Sumo petentium ut per, at his</p>
+                <p>wisim utinam adipiscing. Est ei</p>
+                <p>graeco quod suavitate vix.</p>
+            </div>
+            <div class="work1-2">
+                <img src="img/real-estate-house.svg" alt="">
+                <h2>Meet relator</h2>
+                <p>Sumo petentium ut per, at his</p>
+                <p>wisim utinam adipiscing. Est ei</p>
+                <p>graeco quod suavitate vix.</p>
+            </div>
+            <div class="work1-2">
+                <img src="img/documents-record-document-report.svg" alt="">
+                <h2>Documents</h2>
+                <p>Sumo petentium ut per, at his</p>
+                <p>wisim utinam adipiscing. Est ei</p>
+                <p>graeco quod suavitate vix.</p>
+            </div>
+            <div class="work1-2">
+                <img src="img/key-card.svg" alt="">
+                <h2>Take the keys</h2>
+                <p>Sumo petentium ut per, at his</p>
+                <p>wisim utinam adipiscing. Est ei</p>
+                <p>graeco quod suavitate vix.</p>
+            </div>
+        </div>
+    </div>
+    <div class="main4">
+        <img src="img/main-home-img-3.jpg" alt="">
+        <div class="enq">
+            <div class="enq-1">
+                <h1>Discover a new</h1>
+                <h1>way of living</h1>
+                <p>* Feugait scriptorem qui ea, quo admodum eloquentiam eu.</p>
+                <p> Te malis tibique eum. Ne magna assum everti.</p>
+            </div>
+            <div class="enq-2">
+                <h1>Make an enquiry</h1>
+                <p>Save your time and easily rent or sell your property with</p>
+                <p>the lowest commission on the real estate market.</p>
+                <input type="text" name="name" placeholder="Your name" class="hw">
+                <input type="email" name="email" placeholder="Your mail" class="hw">
+                <input type="number" name="number" placeholder="Your phone number" class="hw">
+                <a href="#"><button type="button" class="hw1" onclick="charles()">Make an enquiry</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="main5">
+        <div class="help">
+            <h1>Our expert will help you</h1>
+            <h1>make the renovation</h1>
+            <div class="help-icon">
+                <img src="img/real-estate-symbol-of-bigger-house-proposal.svg" alt="">
+                <div class="help-icon1">
+                    <h3>Find inspiration</h3>
+                    <p>Sumo petentium ut per, at his wisim utinam adipis</p>
+                    <p>cing. Est e graeco quod suavitate vix ad praesent</p>
+                </div>
+            </div>
+            <div class="help-icon">
+                <img src="img/86256.png" alt="">
+                <div class="help-icon1">
+                    <h3>Find architect/designer</h3>
+                    <p>Sumo petentium ut per, at his wisim utinam adipis</p>
+                    <p>cing. Est e graeco quod suavitate vix ad praesent</p>
+                </div>
+            </div>
+            <div class="help-icon">
+                <img src="img/paint-brush-svgrepo-com.svg" alt="">
+                <div class="help-icon1">
+                    <h3>Begin renovation</h3>
+                    <p>Sumo petentium ut per, at his wisim utinam adipis</p>
+                    <p>cing. Est e graeco quod suavitate vix ad praesent</p>
+                </div>
+            </div>
+        </div>
+        <div class="help1">
+            <div class="help1-img">
+                <img src="img/main-home-img-4.jpg" alt="">
+            </div>
+            <div class="help1-img1">
+                <img src="img/main-home-img-5.jpg" alt="" class="help2">
+                <img src="img/main-home-img-6.jpg" alt="" class="help2">
+            </div>
+        </div>
+    </div>
+    <div class="main2"> 
+        <div class="main2-img">
+            <img src="img/main-home-img-2.jpg" alt="">
+        </div>
+        <div class="main2-dt">
+            <h1>Explore your home</h1>
+            <h1>loan options</h1>
+            <p>Lorem ipsum dolor sit amet, minimum inimicus quo no, at vix primis viderere vituperatoribus. In corpora argumentum. Vix ferri dicam contentiones ne, ex appetere salutatus</p>
+            <a href="#"><button type="button" class="main2-dt1" onclick="charles()">Search property</button></a>
+        </div>
+    </div>
+    <div class="main6">
+        <h1>See what others</h1>
+        <h1>said about us</h1>
+        <div class="about">
+            <div class="about1">
+                <div class="about1-1">
+                    <img src="img/about-us-testimonials1-83x83.png" alt="">
+                    <div class="about-dt">
+                        <h1>Toby young</h1>
+                        <p>Ut vix primis tractatos. Ad est alterum epicuri accusamus.</p>
+                        <p>Duo per id his qualisque deseruisse reformidans ex,</p>
+                        <p>quo omnesque cotidieque.Dolor voluptua per, his in congue</p>
+                    </div>
+                </div>
+                <div class="about1-1">
+                    <img src="img/about-us-testimonials3-83x83.png" alt="">
+                    <div class="about-dt">
+                        <h1>Mark Hagne</h1>
+                        <p>Ut vix primis tractatos. Ad est alterum epicuri accusamus.</p>
+                        <p>Duo per id his qualisque deseruisse reformidans ex,</p>
+                        <p>quo omnesque cotidieque.Dolor voluptua per, his in congue</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about2">
+                <div class="about1-1">
+                    <img src="img/about-us-testimonials2-83x83.png" alt="">
+                    <div class="about-dt">
+                        <h1>Anne Reid</h1>
+                        <p>Ut vix primis tractatos. Ad est alterum epicuri accusamus.</p>
+                        <p>Duo per id his qualisque deseruisse reformidans ex,</p>
+                        <p>quo omnesque cotidieque.Dolor voluptua per, his in congue</p>
+                    </div>
+                </div>
+                <div class="about1-1">
+                    <img src="img/about-us-testimonials4-83x83.png" alt="">
+                    <div class="about-dt">
+                        <h1>Mary Fox</h1>
+                        <p>Ut vix primis tractatos. Ad est alterum epicuri accusamus.</p>
+                        <p>Duo per id his qualisque deseruisse reformidans ex,</p>
+                        <p>quo omnesque cotidieque.Dolor voluptua per, his in congue</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main7">
+       <img src="img/main-home-img-7.jpg" alt=""> 
+       <div class="news">
+            <div class="news1">
+                <h1>Find a home that</h1>
+                <h1>truly suits you</h1>
+                <h5>* Feugait scriptorem qui ea, quo admodum lorem.</h5>
+            </div>
+            <div class="news2">
+                <h1>Sign to newsletter</h1>
+                <p>Save your time and easily rent or sell your property with</p>
+                <p>the lowest commission on the real estate market.</p>
+                <input type="email" name="email" placeholder="Your mail" class="hw2">
+                <a href="#"><button type="button" class="hw3" onclick="charles()">Sign up</button></a>
+            </div>
+       </div>
+    </div>
+    <div class="main8">
+        <img src="img/client-1.png" alt="">
+        <img src="img/client-2.png" alt="">
+        <img src="img/client-3.png" alt="">
+        <img src="img/client-4.png" alt="">
+    </div>
+    <div class="main9">
+        <h1>Read our real</h1>
+        <h1>estate recent news</h1>
+        <div class="rn">
+            <div class="rn1">
+                <img src="img/blog-compact-img1.jpg" alt="">
+                <p>PROPERTY - By Julie Coleman</p>
+                <h1>How to Find a Good</h1>
+                <h1>Real Estate Agent</h1>
+                <p>Ea cibo choro eos, in duo iudico eirmod. Qui modus meliore ex, has in decore virtute repudiare. An summo persequeris contentiones nec, ex sit modus</p>
+            </div>
+            <div class="rn1">
+                <img src="img/blog-compact-img2.jpg" alt="">
+                <p>PROPERTY - By Julie Coleman</p>
+                <h1>15 Ways to Negotiate</h1>
+                <h1>Your Lease Price</h1>
+                <p>Ea cibo choro eos, in duo iudico eirmod. Qui modus meliore ex, has in decore virtute repudiare. An summo persequeris contentiones nec, ex sit modus</p>
+            </div>
+            <div class="rn1">
+                <img src="img/blog-compact-img3.jpg" alt="">
+                <p>PROPERTY - By Julie Coleman</p>
+                <h1>Houses Designed by</h1>
+                <h1>Interior Experts</h1>
+                <p>Ea cibo choro eos, in duo iudico eirmod. Qui modus meliore ex, has in decore virtute repudiare. An summo persequeris contentiones nec, ex sit modus</p>
+            </div>
+        </div>
+    </div>
+    <footer class="main10">
+        <div class="main10-1">
+            <div class="con1">
+                <img src="img/logo.png" alt="">
+                <p>A contemporary theme we designed specifically for real estate and property showcase websites, equipped with every option, element and feature your site may need.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="con2">
+                <h3>Contact us</h3>
+                <p>Vellakulam,madurai,625701</p>
+                <p>+91 6374090041</p>
+                <p>+91 8525074765</p>
+                <p>charles261203@gmail.com</p>
+            </div>
+            <div class="con3">
+                <h3>Categories</h3>
+                <a href="#">Recent property</a>
+                <a href="#">To Sell</a>
+                <a href="#">To Buy</a>
+                <a href="#">To Rent</a>
+            </div>
+            <div class="con4">
+                <h3>Links</h3>
+                <a href="#">Latest News</a>
+                <a href="#">About Us</a>
+                <a href="#">FAQ Page</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+        <div class="main10-2">
+            <p>© 2024 Qode Interactive, All Rights Reserved</p>
+            <div class="ft">
+                <h5>Follow us :</h5>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Youtube</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/index.js"></script>
+</html>

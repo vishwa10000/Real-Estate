@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+.head{
+    position: fixed;
+    z-index: 3;
+    background-color: #fff;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+}
+.logo{
+    padding: 20px;
+}
+.logo img{
+    height: 50px;
+}
+.nav{
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    align-items: center;
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+}
+.nav1:hover{
+    color: #FB8053;
+    border-bottom:1px solid  #A5A695;
+    transition: 1s;
+}
+.log{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-right: 20px;
+}
+.log a{
+    color: black;
+}
+.log a:hover{
+    color: #FB8053;
+}
+.log p:hover{
+    color: #FB8053;
+}
+.log a{
+    text-decoration: none;
+}
+.manubar{
+    display: none;
+}
+.manubar1{
+    display: none;
+}
+.manubar2{
+    display: none;
+}
+.contactus1{
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 3;
+    position: fixed;
+}
+.contactus{
+    padding: 40px;
+    border-radius: 5px;
+    position: relative;
+    height: 400px;
+    width: 400px;
+    display: flex;  
+    flex-direction: column;
+    z-index: 3;
+    margin-left: 450px;
+    margin-top: 170px;
+    background-color: #EDF9F9;
+    transition: opacity 500ms;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.contactus1:target{
+    visibility: visible;
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+.close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.close a{
+    text-decoration: none;
+    font-size: 10px;
+    color: #000;
+}
+.contat3{
+    height: 40px;
+    width: 100px;
+    background-color: #FB8053;
+    border: 0;
+    border-radius: 5px;
+}
+.contat3:hover{
+    box-shadow: inset 50px 0px 0px 0px #F16F40 ,inset -50px 0px 0px 0px #F16F40;
+    transition: 2s;
+    cursor: pointer;
+}
+.contat1{
+    border: 0;
+    border-radius: 5px;
+    padding-left: 10px;
+    height: 40px;
+    width: 200px;
+}
+.contat2{
+    border: 0;
+    height: 80px;
+    border-radius: 5px;
+    width: 200px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.details-img{
+    margin-top: 95px;
+    margin-bottom: 30px;
+    gap: 10px;
+    height: auto;
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+}
+.pro-img3{
+    height: auto;
+    width: 250px;
+}
+.details-cont{
+    display: flex;
+    margin: 40px;
+}
+.cont-1 video{
+    width: 800px;
+}

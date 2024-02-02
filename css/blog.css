@@ -1,0 +1,514 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+.head{
+    position: fixed;
+    z-index: 3;
+    background-color: #fff;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+}
+.logo{
+    padding: 20px;
+}
+.logo img{
+    height: 50px;
+}
+.nav{
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    align-items: center;
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+}
+.nav1:hover{
+    color: #FB8053;
+    border-bottom:1px solid  #A5A695;
+    transition: 1s;
+}
+.log{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-right: 20px;
+}
+.log a{
+    color: black;
+}
+.log a:hover{
+    color: #FB8053;
+}
+.log p:hover{
+    color: #FB8053;
+}
+.log a{
+    text-decoration: none;
+}
+.manubar{
+    display: none;
+}
+.manubar1{
+    display: none;
+}
+.manubar2{
+    display: none;
+}
+.contactus1{
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 3;
+    position: fixed;
+}
+.contactus{
+    padding: 40px;
+    border-radius: 5px;
+    position: relative;
+    height: 400px;
+    width: 400px;
+    display: flex;  
+    flex-direction: column;
+    z-index: 3;
+    margin-left: 450px;
+    margin-top: 170px;
+    background-color: #EDF9F9;
+    transition: opacity 500ms;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.contactus1:target{
+    visibility: visible;
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+.close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.close a{
+    text-decoration: none;
+    font-size: 10px;
+    color: #000;
+}
+.contat3{
+    height: 40px;
+    width: 100px;
+    background-color: #FB8053;
+    border: 0;
+    border-radius: 5px;
+}
+.contat3:hover{
+    box-shadow: inset 50px 0px 0px 0px #F16F40 ,inset -50px 0px 0px 0px #F16F40;
+    transition: 2s;
+    cursor: pointer;
+}
+.contat1{
+    border: 0;
+    border-radius: 5px;
+    padding-left: 10px;
+    height: 40px;
+    width: 200px;
+}
+.contat2{
+    border: 0;
+    height: 80px;
+    border-radius: 5px;
+    width: 200px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.main{
+    top: 95px;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.main img{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+.main-leter{
+    position: absolute;
+    top: 50%;
+    color: white;
+    margin-left: 550px;
+}
+.main-leter h1{
+    font-size: 50px;
+}
+.blog-contant{
+    margin: auto;
+    width: 300px;
+    height: 400px;
+    /* padding: 10px; */
+}
+.blog-contant img{
+    height: auto;
+    width: 100%;
+}
+.blog-contant p{
+    font-size: 20px;
+    padding: 20px;
+}
+.main1{
+    margin-top: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    gap: 10px;
+}
+.main10{
+    height: auto;
+    width: auto;
+    margin: 20px;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+}
+.main10-1{
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px 40px;
+}
+.con1{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: auto;
+    width: 400px;
+}
+.con1 img{
+    height: 50px;
+    width: 100px;
+}
+.con1 a{
+    text-decoration: none;
+    color: black;
+}
+.con2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.con2 h3{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.con3{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.con3 h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.con3 a{
+    text-decoration: none;
+    color: black;
+}
+.con4{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.con4 h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.con4 a{
+    text-decoration: none;
+    color: black;
+}
+.main10-2{
+    display: flex;
+    border-top: solid 1px #E8E8E8;
+    margin: 20px;
+    padding: 40px;
+    justify-content: space-between;
+}
+.ft{
+    display: flex;
+    gap: 10px;
+}
+.ft a{
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (max-width : 1024px) and (min-width: 769px){
+    .contactus {
+        top: 150px;
+        margin: auto;
+    }
+    .logo img{
+        height: 50px;
+    }
+    .nav {
+        font-size: 14px;
+        gap: 20px;
+    }
+    .log a {
+        font-size: 12px;
+    }
+    .main-leter{
+        margin-left: 160px;
+    }
+    .main10-1 {
+        justify-content: center;
+        padding: 80px 20px;
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+    .con1{
+        width: 50%;
+    }
+    .con2{
+        width: 50%;
+        padding-left: 50px;
+    }
+    .con3{
+        width: 50%;
+    }
+    .con4{
+        width: 50%;
+        padding-left: 50px;
+    }
+    .main10-2 p{
+        font-size: 13px;
+    }
+    .ft{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width : 768px) and (min-width: 481px){
+    .head {
+        top: 0;
+        background-color: white;
+        z-index: 1;
+        position: fixed;
+        width: 100%;
+    }
+    .contactus {
+        top: 200px;
+        height: 300px;
+        width: 300px;
+        margin: auto;
+    }
+    .logo img{
+        height: 50px;
+    }
+    .logo{
+        padding: 10px;
+    }
+    .nav{
+        display: none;
+    }
+    .log{
+        display: none;
+    }
+    .manubar{
+        display: block;
+        margin-top: 30px;
+    }
+    .manubar a{
+        color: #000;
+        font-size: 25px;
+        padding-right: 40px;
+        cursor: pointer;
+    }
+    .manubar2 {
+        top: 75px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 15px;
+        margin-left: 420px;
+        background-color: white;
+        width: auto;
+        height: auto;
+        z-index: 1;
+        position: fixed;
+    }
+    .manubar2 ul{
+        list-style: none;
+    }
+    .manubar2 ul li{
+        padding-bottom: 10px;
+    }
+    .manubar2 ul li a{ 
+        color: #000;
+        text-decoration: none;
+    }
+    .manubar1 {
+        top: 75px;
+        padding: 10px;
+        margin-left: 80%;
+        background-color: white;
+        width: auto;
+        height: auto;
+        z-index: 1;
+        position: fixed;
+    }
+    .manubar1 ul{
+        list-style: none;
+    }
+    .manubar1 ul li{
+        padding-bottom: 10px;
+    }
+    .manubar1 ul li a{ 
+        color: #000;
+        text-decoration: none;
+    }
+    .main{
+        top: 75px;
+    }
+    .main-leter{
+        margin-left: 120px;
+    }
+    .main10-1 {
+        gap: 10px;
+        flex-direction: column;
+        padding: 40px;
+    }
+    .main10-2 {
+        gap: 30px;
+        flex-direction: column;
+        margin: 0;
+    }
+    .con1{
+        width: auto;
+    }
+}
+@media only screen and (max-width : 480px) and (min-width: 320px){
+    .head {
+        top: 0;
+        background-color: white;
+        z-index: 1;
+        position: fixed;
+        width: 100%;
+    }
+    .contactus {
+        top: 220px;
+        margin: auto;
+        height: 300px;
+        width: 200px;
+    }
+    .close{
+        right: 10px;
+    }
+    .close a{
+        font-size: 6px;
+    }
+    .contat1{
+        width: 140px;
+    }
+    .contat2{
+        width: 140px;
+    }
+    .contat3{
+        width: 70px;
+    }
+    .logo img{
+        height: 35px;
+        width: 60px;
+    }
+    .nav{
+        display: none;
+    }
+    .log{
+        display: none;
+    }
+    .manubar{
+        display: block;
+        margin-top: 35px;
+        margin-right: 30px;
+    }
+    .manubar a{
+        font-size: 20px;
+        padding: 10px;
+    }
+    .manubar2 {
+        top: 79px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 15px;
+        margin-left: 63%;
+        background-color: white;
+        width: auto;
+        height: auto;
+        z-index: 1;
+        position: fixed;
+    }
+    .manubar2 ul{
+        list-style: none;
+    }
+    .manubar2 ul li{
+        padding-bottom: 10px;
+    }
+    .manubar2 ul li a{ 
+        color: #000;
+        text-decoration: none;
+        font-size: 12px;
+    }
+    .manubar1 {
+        top: 79px;
+        padding: 10px;
+        margin-left: 66%;
+        background-color: white;
+        width: auto;
+        height: auto;
+        z-index: 1;
+        position: fixed;
+    }
+    .manubar1 ul{
+        list-style: none;
+    }
+    .manubar1 ul li{
+        padding-bottom: 10px;
+    }
+    .manubar1 ul li a{ 
+        color: #000;
+        text-decoration: none;
+    }
+    .main{
+        top: 80px;
+    }
+    .main-leter{
+        margin-left: 50px;
+    }
+    .main-leter h1 {
+        font-size: 40px;
+    }
+    .main10-1 {
+        gap: 10px;
+        flex-direction: column;
+    }
+    .con1{
+        width: auto;
+    }
+    .main10-2 {
+        gap: 20px;
+        flex-direction: column;
+    }
+    .ft {
+        flex-wrap: wrap;
+    }
+}

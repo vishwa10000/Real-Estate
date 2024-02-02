@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2b45944627.js" crossorigin="anonymous"></script>
+    <title>Real Estate</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/property.css">
+    <script defer src="js/index.js"></script>
+</head>
+<body>
+    <header class="head">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <ul class="nav">
+            <li><a href="index.html" class="nav1">HOME</a></li>
+            <li><a href="pages.html" class="nav1">PAGES</a></li>
+            <li><a href="property.html" class="nav1">PROPERTY</a></li>
+            <li><a href="blog.html" class="nav1">BLOG</a></li>
+        </ul>
+        <div class="log">
+            <a href="#contat"><i class="fa-regular fa-user">     CONTACT US</i></a>
+            <!-- <a href="#"><p>+   ADD PROPERTY</p></a> -->
+        </div>
+        <div class="manubar">
+            <a onclick="handleClick1()">
+                <i class="fa-regular fa-user"></i>
+            </a>
+            <a  onclick="handleClick()">
+                <i class="fa-solid fa-list bamenu"></i>
+            </a>
+        </div>
+    </header>
+    <div id="contat" class="contactus1">
+        <div class="contactus">
+            <div class="close">
+                <a href="#"><h1>X</h1></a>
+            </div>
+            <input type="text" placeholder="First Name" class="contat1">
+            <input type="text" placeholder="Last Name" class="contat1">
+            <input type="email" placeholder="Email" class="contat1">
+            <textarea class="contat2">Message</textarea>
+            <button type="button" class="contat3">Send</button>
+        </div>
+    </div>
+    <div id="topnav1" class="manubar2">
+        <ul>
+            <li><a href="#contat"><i class="fa-regular fa-user">     CONTACT US</i></a> </li>
+            <!-- <li><a href="#"><p>+   ADD PROPERTY</p></a> </li> -->
+        </ul>
+    </div>
+    <div id="topnav" class="manubar1">
+        <ul>
+            <li><a href="index.html" class="nav1">HOME</a></li>
+            <li><a href="pages.html" class="nav1">PAGES</a></li>
+            <li><a href="property.html" class="nav1">PROPERTY</a></li>
+            <li><a href="blog.html" class="nav1">BLOG</a></li>
+        </ul>
+    </div>
+    <div class="property" id="property">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62883.09644164725!2d78.08153795222069!3d9.91783432634041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c582b1189633%3A0xdc955b7264f63933!2sMadurai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1704777116322!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="search">
+            <div class="search1">
+                <div class="search2">
+                    <select class="sea-1">
+                        <option>Type</option>
+                        <option>Buy</option>
+                        <option>For Rent</option>
+                        <option>Sell</option>
+                    </select>
+                    <select class="sea-1">
+                        <option>Category</option>
+                        <option>Apartments</option>
+                        <option>Condos</option>
+                        <option>Houses</option>
+                        <option>Villas</option>
+                    </select>
+                    <select class="sea-1">
+                        <option>Location</option>
+                        <option>Madurai</option>
+                        <option>pudur</option>
+                        <option>KK Nagar</option>
+                        <option>Teppakulam</option>
+                    </select>
+                </div>
+                <div class="search3">
+                    <label>Bedroom:</label>
+                    <input type="number" class="sea-2">
+                    <label>Bathroom:</label>
+                    <input type="number" class="sea-2">
+                    <input type="number" class="sea-1" placeholder="Min area m2">
+                    <input type="number" class="sea-1" placeholder="Max area m2">
+                </div>
+                <div class="search-bt">
+                    <button type="button" class="sea-3" onclick="charles()"><i class="fa-solid fa-magnifying-glass"></i>     Search</button>
+                </div>
+            </div>
+            <div class="property-1" id="pro1">
+                <div class="pro1">
+                    <div class="pro-img">
+                        <img src="img/property/list-half-map-image-4-450x300.jpg" alt="" class="pro-img3">
+                        <h4><i class="fa-solid fa-location-dot"></i>HOUSES  -  Brooklyn</h4>
+                        <h2>Garden Villa House</h2>
+                        <p>Lorem ipsum dolor sit amet, wisi nemore</p>
+                        <p>fastidii at vis, eos equidem admodum<p>
+                            <div class="pro-img2">
+                                <h5>For Rent</h5>
+                            </div>
+                        <div class="pro-img1">
+                            <h2>265,000$</h2>
+                            <p><img src="img/icons8-building-30.png" alt="building">290m</p>
+                            <p><img src="img/bedroom-hotel.svg" alt="bedroom-hotel"> 4</p>
+                            <p><img src="img/bathtub-2.svg" alt="bathtub-2"> 3</p>
+                        </div>    
+                    </div>
+                    <div class="pro-img">
+                        <img src="img/list-half-map-image-3-460x300.jpg" alt="" class="pro-img3">
+                        <h4><i class="fa-solid fa-location-dot"></i>APARTMENTS  -  Brooklyn</h4>
+                        <h2>Wooden House</h2>
+                        <p>Lorem ipsum dolor sit amet, wisi nemore</p>
+                        <p>fastidii at vis, eos equidem admodum<p>
+                            <div class="pro-img2">
+                                <h5>For Rent</h5>
+                            </div>
+                        <div class="pro-img1">
+                            <h2>89,000 $</h2>
+                            <p><img src="img/icons8-building-30.png" alt="building">125m</p>
+                            <p><img src="img/bedroom-hotel.svg" alt="bedroom-hotel"> 2</p>
+                            <p><img src="img/bathtub-2.svg" alt="bathtub-2"> 2</p>
+                        </div>    
+                    </div>
+                </div>
+                <div class="pro1">
+                    <div class="pro-img">
+                        <img src="img/list-sidebar-img-2-460x300.jpg" alt="" class="pro-img3">
+                        <h4><i class="fa-solid fa-location-dot"></i>APARTMENTS  -  Brooklyn</h4>
+                        <h2>One Bedroom Studio</h2>
+                        <p>Lorem ipsum dolor sit amet, wisi nemore</p>
+                        <p>fastidii at vis, eos equidem admodum<p>
+                            <div class="pro-img2">
+                                <h5>For Rent</h5>
+                            </div>
+                        <div class="pro-img1">
+                            <h2>650,000$</h2>
+                            <p><img src="img/icons8-building-30.png" alt="building">155m</p>
+                            <p><img src="img/bedroom-hotel.svg" alt="bedroom-hotel"> 1</p>
+                            <p><img src="img/bathtub-2.svg" alt="bathtub-2"> 1</p>
+                        </div>    
+                    </div>
+                    <div class="pro-img">
+                        <img src="img/property/marble-house-02-450x300.jpg" alt="" class="pro-img3">
+                        <h4><i class="fa-solid fa-location-dot"></i>APARTMENTS  -  Manhattan</h4>
+                        <h2>Modern Family Home</h2>
+                        <p>Lorem ipsum dolor sit amet, wisi nemore</p>
+                        <p>fastidii at vis, eos equidem admodum<p>
+                            <div class="pro-img2">
+                                <h5>For Rent</h5>
+                            </div>
+                        <div class="pro-img1">
+                            <h2>2,200$</h2>
+                            <p><img src="img/icons8-building-30.png" alt="building">150m</p>
+                            <p><img src="img/bedroom-hotel.svg" alt="bedroom-hotel"> 2</p>
+                            <p><img src="img/bathtub-2.svg" alt="bathtub-2"> 2</p>
+                        </div>    
+                    </div>
+                </div>
+                <div class="pro1">
+                    <div class="pro-img">
+                        <img src="img/property/modern-family-house-02-450x300.jpg" alt="" class="pro-img3">
+                        <h4><i class="fa-solid fa-location-dot"></i>CONDOS  -  Staten Island</h4>
+                        <h2>Pine Forest Bungalow</h2>
+                        <p>Lorem ipsum dolor sit amet, wisi nemore</p>
+                        <p>fastidii at vis, eos equidem admodum<p>
+                            <div class="pro-img2">
+                                <h5>For Rent</h5>
+                            </div>
+                        <div class="pro-img1">
+                            <h2>1,200 $</h2>
+                            <p><img src="img/icons8-building-30.png" alt="building">160m</p>
+                            <p><img src="img/bedroom-hotel.svg" alt="bedroom-hotel"> 4</p>
+                            <p><img src="img/bathtub-2.svg" alt="bathtub-2"> 2</p>
+                        </div>    
+                    </div>
+                    <div class="pro-img">
+                        <img src="img/property/property-gallery-img-2-new-450x300.jpg " alt="" class="pro-img3">
+                        <h4><i class="fa-solid fa-location-dot"></i>VILLAS - Brooklyn</h4>
+                        <h2>South Sun House</h2>
+                        <p>Lorem ipsum dolor sit amet, wisi nemore</p>
+                        <p>fastidii at vis, eos equidem admodum<p>
+                        <div class="pro-img2">
+                            <h5>sell</h5>
+                        </div>
+                        <div class="pro-img1">
+                            <h2>265,000 $</h2>
+                            <p><img src="img/icons8-building-30.png" alt="building">290m</p>
+                            <p><img src="img/bedroom-hotel.svg" alt="bedroom-hotel"> 4</p>
+                            <p><img src="img/bathtub-2.svg" alt="bathtub-2"> 3</p>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="property-2" id="pro2">
+                <div class="pro1">
+                    <div class="pro-img">
+                        <img src="img/property/property-grid-img-2-450x300.jpg" alt="" class="pro-img3">
+                        <h4><i class="fa-solid fa-location-dot"></i>CONDOS  -  Manhattan</h4>
+                        <h2>Park House</h2>
+                        <p>Lorem ipsum dolor sit amet, wisi nemore</p>
+                        <p>fastidii at vis, eos equidem admodum<p>
+                            <div class="pro-img2">
+                                <h5>For Rent</h5>
+                            </div>
+                        <div class="pro-img1">
+                            <h2>2,200 $</h2>
+                            <p><img src="img/icons8-building-30.png" alt="building">150m</p>
+                            <p><img src="img/bedroom-hotel.svg" alt="bedroom-hotel"> 2</p>
+                            <p><img src="img/bathtub-2.svg" alt="bathtub-2"> 2</p>
+                        </div>    
+                    </div>
+                    <div class="pro-img">
+                        <img src="img/property/property-gallery-img-3-new-450x300.jpg" alt="" class="pro-img3">
+                        <h4><i class="fa-solid fa-location-dot"></i>VILLAS - Brooklyn</h4>
+                        <h2>Mountain Cabin</h2>
+                        <p>Lorem ipsum dolor sit amet, wisi nemore</p>
+                        <p>fastidii at vis, eos equidem admodum<p>
+                            <div class="pro-img2">
+                                <h5>For Rent</h5>
+                            </div>
+                        <div class="pro-img1">
+                            <h2>89,000 $</h2>
+                            <p><img src="img/icons8-building-30.png" alt="building">125m</p>
+                            <p><img src="img/bedroom-hotel.svg" alt="bedroom-hotel"> 2</p>
+                            <p><img src="img/bathtub-2.svg" alt="bathtub-2"> 2</p>
+                        </div>    
+                    </div>
+                </div>
+                <div class="pro1">
+                    <div class="pro-img">
+                        <img src="img/property/property-grid-img-3-450x300.jpg" alt="" class="pro-img3">
+                        <h4><i class="fa-solid fa-location-dot"></i>APARTMENTS  -  Queens</h4>
+                        <h2>White Stylish Loft</h2>
+                        <p>Lorem ipsum dolor sit amet, wisi nemore</p>
+                        <p>fastidii at vis, eos equidem admodum<p>
+                            <div class="pro-img2">
+                                <h5>For Rent</h5>
+                            </div>
+                        <div class="pro-img1">
+                            <h2>550,000 $</h2>
+                            <p><img src="img/icons8-building-30.png" alt="building">250m</p>
+                            <p><img src="img/bedroom-hotel.svg" alt="bedroom-hotel"> 4</p>
+                            <p><img src="img/bathtub-2.svg" alt="bathtub-2"> 3</p>
+                        </div>    
+                    </div>
+                    <div class="pro-img">
+                        <img src="img/property/property-grid-img-8-450x300.jpg" alt="" class="pro-img3">
+                        <h4><i class="fa-solid fa-location-dot"></i>VILLAS - Brooklyn</h4>
+                        <h2>Family Mansion</h2>
+                        <p>Lorem ipsum dolor sit amet, wisi nemore</p>
+                        <p>fastidii at vis, eos equidem admodum<p>
+                            <div class="pro-img2">
+                                <h5>For Rent</h5>
+                            </div>
+                        <div class="pro-img1">
+                            <h2>1,200 $</h2>
+                            <p><img src="img/icons8-building-30.png" alt="building">160m</p>
+                            <p><img src="img/bedroom-hotel.svg" alt="bedroom-hotel"> 4</p>
+                            <p><img src="img/bathtub-2.svg" alt="bathtub-2"> 2</p>
+                        </div>    
+                    </div>
+                </div>
+                <div class="pro1">
+                    <div class="pro-img">
+                        <img src="img/property/east-sunglight-02-450x300.jpg" alt="" class="pro-img3">
+                        <h4><i class="fa-solid fa-location-dot"></i>HOUSES  -  Queens</h4>
+                        <h2>Marble House</h2>
+                        <p>Lorem ipsum dolor sit amet, wisi nemore</p>
+                        <p>fastidii at vis, eos equidem admodum<p>
+                            <div class="pro-img2">
+                                <h5>For Rent</h5>
+                            </div>
+                        <div class="pro-img1">
+                            <h2>550,000$</h2>
+                            <p><img src="img/icons8-building-30.png" alt="building">250m</p>
+                            <p><img src="img/bedroom-hotel.svg" alt="bedroom-hotel"> 4</p>
+                            <p><img src="img/bathtub-2.svg" alt="bathtub-2"> 3</p>
+                        </div>    
+                    </div>
+                    <div class="pro-img">
+                        <img src="img/south-sun-house02-460x300.jpg " alt="" class="pro-img3">
+                        <h4><i class="fa-solid fa-location-dot"></i>APARTMENTS  -  Staten Island</h4>
+                        <h2>Penthouse Apartment</h2>
+                        <p>Lorem ipsum dolor sit amet, wisi nemore</p>
+                        <p>fastidii at vis, eos equidem admodum<p>
+                        <div class="pro-img2">
+                            <h5>sell</h5>
+                        </div>
+                        <div class="pro-img1">
+                            <h2>1,200$</h2>
+                            <p><img src="img/icons8-building-30.png" alt="building">160m</p>
+                            <p><img src="img/bedroom-hotel.svg" alt="bedroom-hotel"> 4</p>
+                            <p><img src="img/bathtub-2.svg" alt="bathtub-2"> 2</p>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="property-2" id="pro3">
+                <div class="pro1">
+                    <div class="pro-img">
+                        <img src="img/list-half-map-image-1-460x300.jpg" alt="" class="pro-img3">
+                        <h4><i class="fa-solid fa-location-dot"></i>CONDOS  -  Manhattan</h4>
+                        <h2>Queens Family Home</h2>
+                        <p>Lorem ipsum dolor sit amet, wisi nemore</p>
+                        <p>fastidii at vis, eos equidem admodum<p>
+                            <div class="pro-img2">
+                                <h5>For Rent</h5>
+                            </div>
+                        <div class="pro-img1">
+                            <h2>650,000$</h2>
+                            <p><img src="img/icons8-building-30.png" alt="building">240m</p>
+                            <p><img src="img/bedroom-hotel.svg" alt="bedroom-hotel"> 4</p>
+                            <p><img src="img/bathtub-2.svg" alt="bathtub-2"> 3</p>
+                        </div>    
+                    </div>
+                    <div class="pro-img">
+                        <img src="img/list-half-map-image-3-460x300.jpg" alt="" class="pro-img3">
+                        <h4><i class="fa-solid fa-location-dot"></i>VILLAS - Brooklyn</h4>
+                        <h2>Bright Spacious Apartment</h2>
+                        <p>Lorem ipsum dolor sit amet, wisi nemore</p>
+                        <p>fastidii at vis, eos equidem admodum<p>
+                            <div class="pro-img2">
+                                <h5>For Rent</h5>
+                            </div>
+                        <div class="pro-img1">
+                            <h2>2,200$</h2>
+                            <p><img src="img/icons8-building-30.png" alt="building">150m</p>
+                            <p><img src="img/bedroom-hotel.svg" alt="bedroom-hotel"> 2</p>
+                            <p><img src="img/bathtub-2.svg" alt="bathtub-2"> 2</p>
+                        </div>    
+                    </div>
+                </div>
+                <div class="pro1">
+                    <div class="pro-img">
+                        <img src="img/list-sidebar-img-2-460x300.jpg" alt="" class="pro-img3">
+                        <h4><i class="fa-solid fa-location-dot"></i>APARTMENTS  -  Queens</h4>
+                        <h2>White Stylish Loft</h2>
+                        <p>Lorem ipsum dolor sit amet, wisi nemore</p>
+                        <p>fastidii at vis, eos equidem admodum<p>
+                            <div class="pro-img2">
+                                <h5>For Rent</h5>
+                            </div>
+                        <div class="pro-img1">
+                            <h2>550,000 $</h2>
+                            <p><img src="img/icons8-building-30.png" alt="building">250m</p>
+                            <p><img src="img/bedroom-hotel.svg" alt="bedroom-hotel"> 4</p>
+                            <p><img src="img/bathtub-2.svg" alt="bathtub-2"> 3</p>
+                        </div>    
+                    </div>
+                    <div class="pro-img">
+                        <img src="img/property-gallery-img-1-new-460x300.jpg" alt="" class="pro-img3">
+                        <h4><i class="fa-solid fa-location-dot"></i>VILLAS - Brooklyn</h4>
+                        <h2>Mountain Cabin</h2>
+                        <p>Lorem ipsum dolor sit amet, wisi nemore</p>
+                        <p>fastidii at vis, eos equidem admodum<p>
+                            <div class="pro-img2">
+                                <h5>For Rent</h5>
+                            </div>
+                        <div class="pro-img1">
+                            <h2>1,200 $</h2>
+                            <p><img src="img/icons8-building-30.png" alt="building">160m</p>
+                            <p><img src="img/bedroom-hotel.svg" alt="bedroom-hotel"> 4</p>
+                            <p><img src="img/bathtub-2.svg" alt="bathtub-2"> 2</p>
+                        </div>    
+                    </div>
+                </div>
+                <div class="pro1">
+                    <div class="pro-img">
+                        <img src="img/list-sidebar-img-1-460x300.jpg" alt="" class="pro-img3">
+                        <h4><i class="fa-solid fa-location-dot"></i>CONDOS  -  Staten Island</h4>
+                        <h2>South Sunlight Apartment</h2>
+                        <p>Lorem ipsum dolor sit amet, wisi nemore</p>
+                        <p>fastidii at vis, eos equidem admodum<p>
+                            <div class="pro-img2">
+                                <h5>For Rent</h5>
+                            </div>
+                        <div class="pro-img1">
+                            <h2>1,200 $</h2>
+                            <p><img src="img/icons8-building-30.png" alt="building">160m</p>
+                            <p><img src="img/bedroom-hotel.svg" alt="bedroom-hotel"> 4</p>
+                            <p><img src="img/bathtub-2.svg" alt="bathtub-2"> 2</p>
+                        </div>    
+                    </div>
+                    <div class="pro-img">
+                        <img src="/img/south-sun-house02-460x300.jpg " alt="" class="pro-img3">
+                        <h4><i class="fa-solid fa-location-dot"></i>VILLAS - Brooklyn</h4>
+                        <h2>South Sun House</h2>
+                        <p>Lorem ipsum dolor sit amet, wisi nemore</p>
+                        <p>fastidii at vis, eos equidem admodum<p>
+                        <div class="pro-img2">
+                            <h5>sell</h5>
+                        </div>
+                        <div class="pro-img1">
+                            <h2>265,000 $</h2>
+                            <p><img src="/img/icons8-building-30.png" alt="building">290m</p>
+                            <p><img src="/img/bedroom-hotel.svg" alt="bedroom-hotel"> 4</p>
+                            <p><img src="/img/bathtub-2.svg" alt="bathtub-2"> 3</p>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="pro-slide">
+                <button type="button" class="pro-slide1" onclick="slider1()">1</button>
+                <button type="button" class="pro-slide1" onclick="slider2()">2</button>
+                <button type="button" class="pro-slide1" onclick="slider3()">3</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
